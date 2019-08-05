@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test Mobile VR</title>
+  <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/oscarmarinmiro/aframe-stereo-component/6db3472a301c7e90b5a4dbc0e08d8c4269b0f20e/dist/aframe-stereo-component.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+  <a-scene antialias="true">
+  <!-- Paths to left and right images -->
+  <a-assets>
+    <img id="left" src="https://pp.userapi.com/c849416/v849416388/16d932/jjpjOWX_XsA.jpg">
+    <img id="right" src="https://pp.userapi.com/c849416/v849416388/16d93c/AGnCbS1ky-8.jpg">
+  </a-assets>
+
+  <!-- Camera -->
+  <a-entity camera look-controls position="0 0 0" stereocam="eye:left;"></a-entity>
+
+  <!-- Sky sphere -->
+  <a-sky id="sky1" radius="5000" src="#left" stereo="eye:left"></a-sky>
+  <a-sky id="sky2" radius="5000" src="#right" stereo="eye:right"></a-sky>
+</a-scene>
+
+
+
+</body>
+
+</html>
