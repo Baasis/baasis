@@ -24,7 +24,7 @@
 				geometry.scale( - 1, 1, 1 );
 
 				var material = new THREE.MeshBasicMaterial( {
-					map: new THREE.TextureLoader().load( 'https://github.com/Baasis/baasis/blob/master/360panview/360.jpg' )
+					map: new THREE.TextureLoader().load( 'https://vk.com/doc82020298_513622894?hash=b78151f39dedc8a565&dl=b27b6fe5302e1274db' )
 				} );
 
 				mesh = new THREE.Mesh( geometry, material );
